@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity
 public class Customer {
 
-    public Customer() { 
+    public Customer() {
     }
 
     public Customer(String name) {
