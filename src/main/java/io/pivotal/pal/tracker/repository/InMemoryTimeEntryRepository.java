@@ -22,8 +22,6 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     @Override
     public TimeEntry create(TimeEntry timeEntry) {
         if(timeEntry.getId() == 0){
-//            System.out.println("size: " + timeEntryMap.size());
-//            System.out.println("timeEntryId: " + timeEntry.getId());
             timeEntry.setId(timeEntryMap.size() +1);
         }
         timeEntryMap.put(timeEntry.getId(), timeEntry);
